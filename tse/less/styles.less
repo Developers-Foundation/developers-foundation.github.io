@@ -21,15 +21,16 @@ body {
   footer {
     color: @white;
     background: @darkgray;
-    padding: 20px;
+    padding: 20px 20px 10px;
     text-align: right;
     margin-top: 40px;
+    line-height: 100%;
   }
 }
 
 nav {
   background: @white;
-  padding: 20px;
+  padding: 25px 20px 8px 20px;
   position: fixed;
   z-index: 2;
   top: 0;
@@ -54,7 +55,7 @@ nav {
       a {
         font-size: 18px;
         padding: 20px;
-        line-height: 31px;
+        line-height: 51px;
         letter-spacing: 0.5px;
       }
     }
@@ -88,19 +89,21 @@ nav {
   section {
     display: -webkit-flex;
     display: flex;
-    width: 620px;
+    width: 80%;
     margin: auto;
     padding: 20px;
+    height: auto;
     .subject {
-      width: 300px;
-      padding: 20px;
+      margin: 20px;
+      width: ~"calc(50% - 40px)";
       header {
         font-weight: bold;
         align-content: left;
       }
     }
     img {
-      height: 200px;
+      width: 100%;
+      height: auto;
       margin: 10px 0 30px;
     }
   }
@@ -113,18 +116,14 @@ nav {
     width: 200px;
     margin: auto;
   }
-  .partnerlogo{
-    margin: 30px 0;
-    height: 145px;
+
+  .logoscontainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
     img {
-      margin: 0 10px;
-      display: inline-block;
-      vertical-align: middle;
-      width: 200px;
-      box-shadow: 0 10px 10px -10px @lightgray;
-    }
-    .wide {
-      padding: 35px 20px;
+      max-height: 100px;
+      border: none;
     }
   }
 }
@@ -152,7 +151,7 @@ nav {
           text-align: center;
         img {
           width: 200px;
-          height: 200px;
+          height: 300px;
         }
       }
     }
